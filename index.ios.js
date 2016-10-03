@@ -17,6 +17,9 @@ const ScrollViewAlign = React.createClass({
           contentContainerStyle={this.props.contentContainerStyle}
           style={{flex: 0, backgroundColor: '#BDBDBD', height: screenWidth * 0.5, width: scrollViewWidth}}
           snapToAlignment={'start'}
+          scrollEventThrottle={299}
+          directionalLockEnabled={true}
+          decelerationRate={'fast'}
           contentOffset={{
             x: 0,
             y: 0,
